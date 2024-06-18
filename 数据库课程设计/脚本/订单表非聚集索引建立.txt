@@ -1,0 +1,17 @@
+USE [DataBase]
+GO
+/*建立客户ID非聚集索引*/
+CREATE NONCLUSTERED INDEX 客户ID索引
+ON dbo.订单(客户ID)
+WITH FILLFACTOR = 80
+GO
+/*建立雇员ID非聚集索引*/
+CREATE NONCLUSTERED INDEX 雇员ID索引
+ON dbo.订单(雇员ID)
+WITH FILLFACTOR = 80
+GO
+/*建立供应商ID非聚集索引*/
+CREATE NONCLUSTERED INDEX 供应商ID索引
+ON dbo.订单(供应商ID)
+WITH FILLFACTOR = 80
+GO

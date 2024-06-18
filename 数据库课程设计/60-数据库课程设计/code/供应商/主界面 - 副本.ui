@@ -1,0 +1,1775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mainwindow</class>
+ <widget class="QMainWindow" name="Mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>774</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>salepage</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>80</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(76, 216, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正粗黑宋简体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>供应商商品管理系统</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="styleSheet">
+             <string notr="true">QPushButton,#pushbutton{
+	border:none;
+	color:(255,255,255)
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>Icon/minus.png</normaloff>Icon/minus.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="styleSheet">
+             <string notr="true">QPushButton,#pushbutton{
+	border:none;
+	color:(255,255,255)
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>Icon/close.png</normaloff>Icon/close.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>1</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,8">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_8">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(245, 245, 247);
+background-color: rgb(225, 225, 225);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QFrame" name="frame_10">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>200</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton {
+        background-color: lightgray;
+    }
+    QPushButton:pressed {
+        background-color: darkgray;
+    }</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,1,1,1,9">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QPushButton" name="button_shouye">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>库存信息</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../Icon/001_首页.png</normaloff>../Icon/001_首页.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_shopping">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>商品信息</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../icon/购物车.png</normaloff>../icon/购物车.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>16</width>
+                    <height>16</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_dingdan">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>订单发货</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>../icon/3.1订单.png</normaloff>../icon/3.1订单.png</iconset>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="button_mine">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:none;
+color: rgb(0, 0, 0);</string>
+                  </property>
+                  <property name="text">
+                   <string>个人信息</string>
+                  </property>
+                  <property name="icon">
+                   <iconset>
+                    <normaloff>:/icon/icon/user-ring-block.png</normaloff>:/icon/icon/user-ring-block.png</iconset>
+                  </property>
+                  <property name="iconSize">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="verticalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>40</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_9">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QStackedWidget" name="stackedWidget">
+               <property name="currentIndex">
+                <number>3</number>
+               </property>
+               <widget class="QWidget" name="page_shouye">
+                <layout class="QGridLayout" name="gridLayout">
+                 <item row="1" column="1" colspan="7">
+                  <widget class="QScrollArea" name="scrollArea">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>109</width>
+                      <height>109</height>
+                     </rect>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_6">
+                     <item row="0" column="0">
+                      <widget class="QTableWidget" name="tableSAll">
+                       <column>
+                        <property name="text">
+                         <string>产品ID</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>产品名称</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>产品库存量</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>产品订购量</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>产品再订购量</string>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>产品中止</string>
+                        </property>
+                       </column>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                 <item row="0" column="6">
+                  <widget class="QPushButton" name="button2Ssearchcancel">
+                   <property name="text">
+                    <string>取消</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="3">
+                  <widget class="QLabel" name="label_2">
+                   <property name="text">
+                    <string>库存</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="4">
+                  <widget class="QLineEdit" name="text2SSearch">
+                   <property name="styleSheet">
+                    <string notr="true">border-radius:50px;
+background-color: rgba(0,0,0,40);</string>
+                   </property>
+                   <property name="placeholderText">
+                    <string>输入商品名称</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item row="0" column="2">
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item row="0" column="5">
+                  <widget class="QPushButton" name="button2SSearch">
+                   <property name="text">
+                    <string>查询</string>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>:/icon/icon/搜索.png</normaloff>:/icon/icon/搜索.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_shopping">
+                <layout class="QGridLayout" name="gridLayout_3">
+                 <item row="3" column="0">
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <item>
+                    <spacer name="horizontalSpacer_10">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="button2Supdate">
+                     <property name="text">
+                      <string>修改</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="button2Sudcancel">
+                     <property name="text">
+                      <string>取消</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_11">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                  </layout>
+                 </item>
+                 <item row="1" column="0">
+                  <widget class="QTableWidget" name="table2SInf">
+                   <column>
+                    <property name="text">
+                     <string>产品ID</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>产品名称</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>产品单位数量</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>产品单价</string>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>产品中止</string>
+                    </property>
+                   </column>
+                  </widget>
+                 </item>
+                 <item row="0" column="0">
+                  <widget class="QLabel" name="label_17">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>11</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(0, 0, 127);</string>
+                   </property>
+                   <property name="text">
+                    <string>商品信息</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_dingdan">
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QTabWidget" name="tabWidget">
+                   <property name="currentIndex">
+                    <number>0</number>
+                   </property>
+                   <widget class="QWidget" name="widget">
+                    <attribute name="title">
+                     <string>未发货订单</string>
+                    </attribute>
+                    <layout class="QGridLayout" name="gridLayout_4">
+                     <item row="1" column="1">
+                      <widget class="QLineEdit" name="text2Dunsend">
+                       <property name="placeholderText">
+                        <string>在此输入订单ID...</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_3">
+                       <item>
+                        <spacer name="horizontalSpacer_12">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QPushButton" name="button2Dsend">
+                         <property name="text">
+                          <string>确认发货</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_13">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="2" column="0">
+                      <widget class="QLabel" name="label_19">
+                       <property name="text">
+                        <string>发货日期</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="label_18">
+                       <property name="text">
+                        <string>订单ID</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QDateTimeEdit" name="data2Dsenddate"/>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QGroupBox" name="groupBox">
+                       <property name="title">
+                        <string>订单信息</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_9">
+                        <item>
+                         <widget class="QTableWidget" name="table2Dunsend">
+                          <column>
+                           <property name="text">
+                            <string>订单ID</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单订购日期</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单发货日期</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单到货日期</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单货款确认日期</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单运货费</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单货主名称</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单详细地址</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单货主所在国家</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单货主所在城市</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单货主所在地区</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单货主所在地邮政编码</string>
+                           </property>
+                          </column>
+                          <column>
+                           <property name="text">
+                            <string>订单折扣</string>
+                           </property>
+                          </column>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="done">
+                    <attribute name="title">
+                     <string>已发货订单</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_10">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_7">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_3">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QGroupBox" name="groupBox_2">
+                          <property name="title">
+                           <string>订单信息</string>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_11">
+                           <item>
+                            <widget class="QTableWidget" name="table2Dsended">
+                             <column>
+                              <property name="text">
+                               <string>订单ID</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单订购日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单发货日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单到货日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货款确认日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单运货费</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主名称</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主详细地址</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在国家</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在城市</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在地区</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在地邮政编码</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单折扣</string>
+                              </property>
+                             </column>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_4">
+                       <property name="styleSheet">
+                        <string notr="true">    QPushButton:pressed {
+        background-color: darkgray;
+    }</string>
+                       </property>
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_10" stretch="0,0,0,0">
+                        <property name="spacing">
+                         <number>7</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <spacer name="horizontalSpacer_8">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>152</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_20">
+                          <property name="text">
+                           <string>查询订单号</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="text2Dsearchsended">
+                          <property name="styleSheet">
+                           <string notr="true">border-radius:50px;
+background-color: rgba(0,0,0,40);</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>在此输入订单号...</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_15">
+                          <property name="spacing">
+                           <number>20</number>
+                          </property>
+                          <item>
+                           <widget class="QPushButton" name="button2Dsearchsended">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="baseSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+        background-color: rgb(255, 223, 201);
+		border-radius:50px;
+    }
+    QPushButton:pressed {
+        background-color: darkgray;
+    }</string>
+                            </property>
+                            <property name="text">
+                             <string>查询</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="button2Dssendcancel">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+        background-color: rgb(255, 223, 201);
+		border-radius:50px;
+    }
+    QPushButton:pressed {
+        background-color: darkgray;
+    }</string>
+                            </property>
+                            <property name="text">
+                             <string>取消</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                   <widget class="QWidget" name="all">
+                    <attribute name="title">
+                     <string>所有订单</string>
+                    </attribute>
+                    <layout class="QVBoxLayout" name="verticalLayout_5">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QFrame" name="frame_6">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QVBoxLayout" name="verticalLayout_6">
+                        <property name="spacing">
+                         <number>0</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QGroupBox" name="groupBox_3">
+                          <property name="title">
+                           <string>订单信息</string>
+                          </property>
+                          <layout class="QHBoxLayout" name="horizontalLayout_13">
+                           <item>
+                            <widget class="QTableWidget" name="table2D">
+                             <column>
+                              <property name="text">
+                               <string>订单ID</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单订购日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单发货日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单到货日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货款确认日期</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单运货费</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主名称</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主详细地址</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在国家</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在城市</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在地区</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单货主所在地邮政编码</string>
+                              </property>
+                             </column>
+                             <column>
+                              <property name="text">
+                               <string>订单折扣</string>
+                              </property>
+                             </column>
+                            </widget>
+                           </item>
+                          </layout>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QFrame" name="frame_5">
+                       <property name="frameShape">
+                        <enum>QFrame::StyledPanel</enum>
+                       </property>
+                       <property name="frameShadow">
+                        <enum>QFrame::Raised</enum>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_12">
+                        <property name="spacing">
+                         <number>7</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <spacer name="horizontalSpacer_2">
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>281</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QLabel" name="label_3">
+                          <property name="text">
+                           <string>查询订单号</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QLineEdit" name="text2Dsearchall">
+                          <property name="styleSheet">
+                           <string notr="true">border-radius:50px;
+background-color: rgba(0,0,0,40);</string>
+                          </property>
+                          <property name="placeholderText">
+                           <string>在此输入订单号....</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_14">
+                          <property name="spacing">
+                           <number>20</number>
+                          </property>
+                          <item>
+                           <widget class="QPushButton" name="button2Dsearchall">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="baseSize">
+                             <size>
+                              <width>0</width>
+                              <height>0</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+        background-color: rgb(255, 223, 201);
+		border-radius:50px;
+    }
+    QPushButton:pressed {
+        background-color: darkgray;
+    }</string>
+                            </property>
+                            <property name="text">
+                             <string>查询</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QPushButton" name="button2Dsacancel">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>25</height>
+                             </size>
+                            </property>
+                            <property name="cursor">
+                             <cursorShape>PointingHandCursor</cursorShape>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QPushButton {
+        background-color: rgb(255, 223, 201);
+		border-radius:50px;
+    }
+    QPushButton:pressed {
+        background-color: darkgray;
+    }</string>
+                            </property>
+                            <property name="text">
+                             <string>取消</string>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="page_manage">
+                <layout class="QVBoxLayout" name="verticalLayout_8" stretch="1,0">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QFrame" name="frame_13">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_9" stretch="1,0">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QFrame" name="frame_15">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QHBoxLayout" name="horizontalLayout_7">
+                       <item>
+                        <spacer name="horizontalSpacer_3">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_4">
+                         <property name="font">
+                          <font>
+                           <pointsize>11</pointsize>
+                           <weight>75</weight>
+                           <bold>true</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(0, 0, 127);</string>
+                         </property>
+                         <property name="text">
+                          <string>信息</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_4">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_16">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QFormLayout" name="formLayout">
+                       <item row="0" column="1">
+                        <widget class="QLabel" name="label_6">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>公司名称</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="1" column="1">
+                        <widget class="QLabel" name="text2GCom">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="2" column="1">
+                        <widget class="QLabel" name="label_7">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>姓名</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="3" column="1">
+                        <widget class="QLabel" name="text2GName">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="4" column="1">
+                        <widget class="QLabel" name="label_8">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>职务</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="5" column="1">
+                        <widget class="QLabel" name="text2GJob">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="6" column="1">
+                        <widget class="QLabel" name="label_9">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>城市</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="7" column="1">
+                        <widget class="QLabel" name="text2GCity">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="8" column="1">
+                        <widget class="QLabel" name="label_10">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>地区</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="9" column="1">
+                        <widget class="QLabel" name="text2GArea">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="10" column="1">
+                        <widget class="QLabel" name="label_11">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>国家</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="11" column="1">
+                        <widget class="QLabel" name="text2GCountry">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="12" column="1">
+                        <widget class="QLabel" name="label_12">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>详细地址</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="13" column="1">
+                        <widget class="QLabel" name="text2GAddr">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="14" column="1">
+                        <widget class="QLabel" name="label_13">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>邮政编码</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="15" column="1">
+                        <widget class="QLabel" name="text2Gecode">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="16" column="1">
+                        <widget class="QLabel" name="label_14">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>电话</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="17" column="1">
+                        <widget class="QLabel" name="text2GPhone">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="18" column="1">
+                        <widget class="QLabel" name="label_15">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>传真</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="19" column="1">
+                        <widget class="QLabel" name="text2Gfox">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="20" column="1">
+                        <widget class="QLabel" name="label_16">
+                         <property name="styleSheet">
+                          <string notr="true"/>
+                         </property>
+                         <property name="text">
+                          <string>密码</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="21" column="1">
+                        <widget class="QLabel" name="text2GKeyWord">
+                         <property name="styleSheet">
+                          <string notr="true">background-color: rgba(76, 216, 255,90);</string>
+                         </property>
+                         <property name="text">
+                          <string>NULL</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                      <zorder>text2GKeyWord</zorder>
+                      <zorder>label_6</zorder>
+                      <zorder>label_7</zorder>
+                      <zorder>label_8</zorder>
+                      <zorder>label_9</zorder>
+                      <zorder>label_10</zorder>
+                      <zorder>label_11</zorder>
+                      <zorder>label_12</zorder>
+                      <zorder>label_13</zorder>
+                      <zorder>label_14</zorder>
+                      <zorder>label_15</zorder>
+                      <zorder>label_16</zorder>
+                      <zorder>text2GCom</zorder>
+                      <zorder>text2GName</zorder>
+                      <zorder>text2GJob</zorder>
+                      <zorder>text2GCity</zorder>
+                      <zorder>text2GArea</zorder>
+                      <zorder>text2GCountry</zorder>
+                      <zorder>text2GAddr</zorder>
+                      <zorder>text2Gecode</zorder>
+                      <zorder>text2GPhone</zorder>
+                      <zorder>text2Gfox</zorder>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_14">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QLabel" name="label_5">
+                    <property name="geometry">
+                     <rect>
+                      <x>180</x>
+                      <y>60</y>
+                      <width>90</width>
+                      <height>20</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QLabel{
+	color: rgb(85, 0, 255);
+	font-size: 20px;
+}</string>
+                    </property>
+                    <property name="text">
+                     <string>公司名称*</string>
+                    </property>
+                    <property name="buddy">
+                     <cstring>text2Dsearchall</cstring>
+                    </property>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Mainwindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>555</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>468</x>
+     <y>-28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Mainwindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>586</x>
+     <y>49</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>593</x>
+     <y>-38</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

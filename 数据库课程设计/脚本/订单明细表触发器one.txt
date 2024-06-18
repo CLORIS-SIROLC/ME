@@ -1,0 +1,21 @@
+USE [DataBase]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE trigger one on [dbo].[订单明细] 
+after insert
+as 
+begin
+	declare @产品ID int;
+	declare @订单ID int;
+	declare @数量 smallint;
+	declare @单价 money; 
+	set @产品ID=(SELECT 产品ID FROM inserted);
+	set @订单ID=(SELECT 订单ID FROM inserted);
+	set @数量=(SELECT 数量 FROM inserted);
+	set @单价=(select 产品单价 from dbo.产品 where dbo.产品.产品ID=@产品ID );
+	update  dbo.订单明细 
+	set 单项产品总金额=@单价*@数量 where 订单ID=@订单ID and 产品ID=@产品ID;
+end;

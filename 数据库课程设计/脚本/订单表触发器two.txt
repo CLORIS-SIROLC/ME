@@ -1,0 +1,35 @@
+USE [DataBase]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create trigger two
+on [dbo].[订单] 
+after insert
+as 
+begin
+	declare @订单ID int;
+	declare @总价 money; 
+	declare @折扣 money; 
+	declare @邮政编码 nvarchar(20);
+	set @邮政编码=(SELECT 订单货主所在地邮政编码 FROM inserted);
+	set @订单ID=(SELECT 订单ID FROM inserted);
+	set @总价=(
+	select  sum(单项产品总金额)
+	from dbo.订单明细
+	where dbo.订单明细.订单ID=@订单ID);
+	if(@总价<1000) set @折扣=0;
+	if(@总价>=1000 and @总价<5000)set @折扣=@总价*0.01;
+	if(@总价>=5000 and @总价<10000)set @折扣=@总价*0.02;
+	if(@总价>=10000)set @折扣=@总价*0.03;
+	update  dbo.订单
+	set 订单折扣=@折扣;
+	
+/*	update  dbo.订单
+	set 客户ID=(select 客户ID
+				from dbo.客户
+				where dbo.客户.客户所在地邮政编码=@邮政编码);
+*/
+
+end;
